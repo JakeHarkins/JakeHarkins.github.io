@@ -1,16 +1,20 @@
-// Style Document
+/* Style Document */
 body {
-	font-family: Arial;
+	font-family: sans-serif;
+	width: auto;
+	margin: 0;
 }
 
 h1 {
-	font-family: Arial;
+	font-family: sans-serif;
 	font-size: 40px;
+	text-align: center;
 }
 
 p {
-	font-family: Arial;
-	color: black;
+	font-family: sans-serif;
+	color: #000000;
+	text-align: center;
 }
 
 ul {
@@ -22,13 +26,21 @@ ul {
 	top: 0;
 }
 
+/* TOPNAV */
+
 .topnav {
+	height: 50px;
 	background-color: #333;
 	overflow: hidden;
+	text-align: center;
+}
+
+.topnav li{
+	display: inline-block;
 }
 
 .topnav a {
-	font-family: Arial;
+	font-family: sans-serif;
 	background-color: #333;
 	color: white;
 	text-align: center;
@@ -37,7 +49,7 @@ ul {
 	font-size: 17px;
 }
 
-.topnav a.hover {
+.topnav a:hover {
 	background-color: #17dfe6;
 	color: white;
 }
@@ -45,4 +57,61 @@ ul {
 .topnav a.active {
 	background-color: orange;
 	color: black;
+}
+
+.option-underline{
+	height: 10px;
+	width: 30px;
+	background-color: #FFFFFF;
+}
+
+/* FOOTER */
+footer{
+	height: 200px;
+	width: 100%;
+	background-color: #333;
+	position: absolute;
+	bottom: 0;
+}
+
+footer a:visited{
+	color: white;
+}
+
+footer img{
+	height: 20px;
+	width: 20px;
+	vertical-align: auto;
+}
+
+footer p, a{
+	text-align: center;
+	height: auto;
+}
+
+footer h1{
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+}
+
+.footer-other{
+	display: inline-block;
+}
+
+.find-me{
+	display: inline-block;
+}
+
+.find-me a{
+	color: white;
+}
+
+.creatornote{
+	font-size: 12px;
+	color: lightgray;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	width: 75%;
 }
