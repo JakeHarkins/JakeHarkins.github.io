@@ -50,7 +50,7 @@ ul {
 .topnav a {
 	font-family: sans-serif;
 	background-color: white;
-	color: blue;
+	color: black;
 	padding: 14px;
 	text-decoration: none;
 	font-size: 17px;
@@ -58,11 +58,11 @@ ul {
 }
 
 .topnav a:hover {
-	color: grey;
+	color: cyan;
 }
 
 .topnav a.active {
-	color: black;
+	color: blue;
 	text-emphasis: bold;
 }
 
