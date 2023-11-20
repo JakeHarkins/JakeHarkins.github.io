@@ -16,6 +16,9 @@ p {
 	font-family: sans-serif;
 	color: #000000;
 	text-align: center;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ul {
@@ -28,44 +31,100 @@ ul {
 }
 
 /* NAVIGATION */
+.topnav{
+	display: flex;
+	background-color: whitesmoke;
+	max-height: 50px;
+}
+
 .topnav-header{
 	display: inline-block;
-	width: 15%;
-	background-color: whitesmoke;
-	min-height: 50px;
+	width: 50%;
 	height: 5%;
 }
 
-.topnav-directors {
+.topnav-header p{
+	text-align: left;
+}
+
+.topnav-links{
 	display: inline-block;
-	position: absolute;
-	min-height: 50px;
 	height: 5%;
-	width: 85%;
-	background-color: whitesmoke;
+	width: 50%;
 	text-align: center;
 }
 
-.topnav-directors a {
-	font-family: sans-serif;
-	color: black;
-
-	height: 100%;
-
-	padding-left: 3%;
-	padding-right: 3%;
-	text-align: center;
-	text-decoration: none;
-	font-size: 17px;
+.link{
+	display: inline-block;
+	padding: 0 2% 0 2%;
 }
 
-.topnav-directors a:hover {
+.topnav-links p:hover {
 	color: cyan;
 }
 
-.topnav-directors a.active {
+.topnav-links p.active {
 	color: blue;
 	text-emphasis: bold;
+}
+
+/* PROJECTS */
+.project-small{
+	background-color: aliceblue;
+	display: flex;
+	width: 90%;
+	max-height: 250px;
+	margin: 1% 5% 1% 5%;
+}
+
+.project-small .img-div{
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+	height: 100%;
+}
+
+.project-small .body{
+	display: inline-block;
+	vertical-align: top;
+	width: 75%;
+	height: 100%;
+}
+
+.project-small h1{
+	padding-left: 5%;
+	font-size: 24px;
+	text-align: left;
+}
+
+.project-small p{
+	text-align: left;
+	margin-left: 5%;
+}
+
+.project-small .overview-img{
+	vertical-align: middle;
+	max-width: 98%;
+	max-height: 98%;
+	padding: 10%;
+}
+
+.badge{
+	display: flex;
+	flex-direction: row;
+	padding-left: 5%;
+	margin-right: -2.5%;
+	padding-bottom: 2%;
+	align-self: flex;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-small:hover{
+	background-color: lightblue;
 }
 
 /* ABOUT ME */
@@ -105,7 +164,7 @@ footer{
 }
 
 footer a:visited{
-	color: white;
+	color: black;
 }
 
 footer img{
@@ -121,7 +180,7 @@ footer p, a{
 footer h1{
 	padding: 10px;
 	font-size: 15px;
-	color: white;
+	color: black;
 }
 
 .find-me{
@@ -130,7 +189,7 @@ footer h1{
 }
 
 .find-me a{
-	color: white;
+	color: black;
 }
 
 .find-me article{
@@ -144,12 +203,4 @@ footer h1{
 	color: darkgrey;
 	height: 20%;
 	text-align: left;
-	padding-left: 20px;
-	width: 75%;
-}
-
-/* PROJECTS VIEWER */
-.project-header {
-	text-align: left;
-	padding-left: 10px;
 }
