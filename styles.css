@@ -1,4 +1,5 @@
 /* Style Document */
+/* All Styling done by Jake Harkins */
 body {
 	font-family: sans-serif;
 	width: auto;
@@ -128,9 +129,24 @@ ul {
 	background-color: lightblue;
 }
 
+.project-styler{
+	color: darkgray;
+	font-size: 28px;
+	text-align: left;
+	padding-left: 2.5%;
+}
+
+.project-header{
+	font-size: 28px;
+	text-align: left;
+	padding-left: 2.5%;
+	padding-top: 0;
+}
+
 /* ABOUT ME */
 .about-me-left {
 	width: 60%;
+	display: inline-block;
 }
 
 .about-me-left p{
@@ -142,6 +158,7 @@ ul {
 
 .about-me-right {
 	width: 40%;
+	display: inline-block;
 }
 
 /* Main Body */
