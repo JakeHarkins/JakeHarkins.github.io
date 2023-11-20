@@ -3,7 +3,7 @@ body {
 	font-family: sans-serif;
 	width: auto;
 	margin: 0;
-	background-color: #5c5c5c;
+	background-color: white;
 }
 
 h1 {
@@ -28,42 +28,60 @@ ul {
 }
 
 /* NAVIGATION */
-.topnav {
-	height: 50px;
-	background-color: white;
-	overflow: hidden;
+.topnav-header{
+	display: inline-block;
+	width: 15%;
+	background-color: whitesmoke;
+	min-height: 50px;
+	height: 5%;
+}
+
+.topnav-directors {
+	display: inline-block;
+	position: absolute;
+	min-height: 50px;
+	height: 5%;
+	width: 85%;
+	background-color: whitesmoke;
 	text-align: center;
 }
 
-.topnav p{
-	display: inline-block;
-	position: absolute;
-	left: 0px;
-	text-align: left;
-	padding-left: 20px;
-}
-
-.topnav li{
-	display: inline-block;
-}
-
-.topnav a {
+.topnav-directors a {
 	font-family: sans-serif;
-	background-color: white;
 	color: black;
-	padding: 14px;
+
+	height: 100%;
+
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
 	text-decoration: none;
 	font-size: 17px;
-	height: auto;
 }
 
-.topnav a:hover {
+.topnav-directors a:hover {
 	color: cyan;
 }
 
-.topnav a.active {
+.topnav-directors a.active {
 	color: blue;
 	text-emphasis: bold;
+}
+
+/* ABOUT ME */
+.about-me-left {
+	width: 60%;
+}
+
+.about-me-left p{
+	font-size: 20px;
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.about-me-right {
+	width: 40%;
 }
 
 /* Main Body */
@@ -81,7 +99,7 @@ ul {
 footer{
 	height: 150px;
 	width: 100%;
-	background-color: #333;
+	background-color: whitesmoke;
 	position: absolute;
 	bottom: 0;
 }
@@ -123,7 +141,7 @@ footer h1{
 
 .creatornote{
 	font-size: 12px;
-	color: lightgray;
+	color: darkgrey;
 	height: 20%;
 	text-align: left;
 	padding-left: 20px;
