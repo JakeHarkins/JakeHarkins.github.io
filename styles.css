@@ -3,6 +3,7 @@ body {
 	font-family: sans-serif;
 	width: auto;
 	margin: 0;
+	background-color: #5c5c5c;
 }
 
 h1 {
@@ -26,13 +27,20 @@ ul {
 	top: 0;
 }
 
-/* TOPNAV */
-
+/* NAVIGATION */
 .topnav {
-	height: 30px;
-	background-color: #333;
+	height: 50px;
+	background-color: white;
 	overflow: hidden;
 	text-align: center;
+}
+
+.topnav p{
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	text-align: left;
+	padding-left: 20px;
 }
 
 .topnav li{
@@ -41,28 +49,32 @@ ul {
 
 .topnav a {
 	font-family: sans-serif;
-	background-color: #333;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
+	background-color: white;
+	color: blue;
+	padding: 14px;
 	text-decoration: none;
 	font-size: 17px;
+	height: auto;
 }
 
 .topnav a:hover {
-	background-color: #17dfe6;
-	color: white;
+	color: grey;
 }
 
 .topnav a.active {
-	background-color: orange;
 	color: black;
+	text-emphasis: bold;
 }
 
-.option-underline{
-	height: 10px;
-	width: 30px;
-	background-color: #FFFFFF;
+/* Main Body */
+.main-body{
+	width: 50%;
+	height: auto;
+	min-height: 100px;
+	background-color: #17dfe6;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
 }
 
 /* FOOTER */
@@ -116,4 +128,10 @@ footer h1{
 	text-align: left;
 	padding-left: 20px;
 	width: 75%;
+}
+
+/* PROJECTS VIEWER */
+.project-header {
+	text-align: left;
+	padding-left: 10px;
 }
