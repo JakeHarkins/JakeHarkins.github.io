@@ -9,6 +9,7 @@ body {
 	width: auto;
 	margin: 0;
 	background-color: white;
+	text-align: left;
 }
 
 h1 {
@@ -26,21 +27,16 @@ p {
 	margin-right: auto;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-
 .container{
 	display: flex;
+	width: 100%;
 }
 
 /* NAVIGATION */
 .topnav{
+	position: sticky;
+	position: -webkit-sticky;
+	width: 100%;
 	display: flex;
 	background-color: whitesmoke;
 	max-height: 50px;
@@ -150,12 +146,23 @@ ul {
 	padding-left: 2.5%;
 }
 
-.project-large{
-	padding: 2.5% 5% 2.5% 5%
+.project-overview{
+	max-width: 50%;
 }
 
-.project-overview p{
+.project-overview-r{
 	text-align: left;
+	width: 40%;
+}
+
+.project-overview-l{
+	text-align: right;
+	width: 40%;
+}
+
+.project-img{
+	max-width: 90%;
+	padding: 2.5% 5% 2.5% 5%;
 }
 
 /* ABOUT ME */
@@ -217,7 +224,7 @@ footer{
 	height: 150px;
 	width: 100%;
 	background-color: whitesmoke;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 }
 
