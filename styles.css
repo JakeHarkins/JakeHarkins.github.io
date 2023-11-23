@@ -1,15 +1,22 @@
 /* Style Document */
-/* All Styling done by Jake Harkins */
+/* All Styling done by Jake Harkins, 2023 */
 
 /* Roboto Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
 	font-family: 'Roboto', sans-serif;
-	width: auto;
-	margin: 0;
+	width: 100%;
+
 	background-color: white;
 	text-align: left;
+
+	/* Ensure Margin is Removed From Pages */
+	margin: 0 0 0 0;
+
+	/* Ensure Content Uses the Full Height of the Viewport, then Display Footer */
+	min-height: 100vh;
+	position: relative;
 }
 
 h1 {
@@ -32,29 +39,30 @@ p {
 	width: 100%;
 }
 
-/* NAVIGATION */
+/* TOP BAR NAVIGATION */
 .topnav{
-	position: sticky;
-	position: -webkit-sticky;
-	width: 100%;
 	display: flex;
+	width: 100%;
 	background-color: whitesmoke;
+
+	height: 5%;
 	max-height: 50px;
 }
 
 .topnav-header{
 	display: inline-block;
 	width: 50%;
-	height: 5%;
 }
 
-.topnav-header p{
-	text-align: left;
+.topnav-header a{
+	display: inline-block;
+	width: 25%;
+	text-decoration: none;
+	color: black;
 }
 
 .topnav-links{
 	display: inline-block;
-	height: 5%;
 	width: 50%;
 	text-align: center;
 }
@@ -62,6 +70,11 @@ p {
 .link{
 	display: inline-block;
 	padding: 0 2% 0 2%;
+}
+
+.link-home{
+	display: inline-block;
+	min-width: 100%;
 }
 
 .topnav-links p:hover {
@@ -74,6 +87,7 @@ p {
 }
 
 /* PROJECTS */
+/* OVERVIEW (FROM PROJECTS/HOME PAGE) */
 .project-small{
 	background-color: aliceblue;
 	display: flex;
@@ -115,15 +129,21 @@ p {
 	padding: 1%;
 }
 
+/* PROJECT BADGES */
 .badge{
-	display: flex;
-	flex-direction: row;
-	padding-left: 5%;
-	margin-right: -2.5%;
-	align-self: flex;
-	padding-bottom: 1%;
+	display: inline-block;
+
+	padding: 1% 0 1% 5%;
 }
 
+.badge-div{
+	display: flex;
+
+	/* Set Badge Div to Far Left */
+	margin: 2.5% 4% 2.5% 0;
+}
+
+/* PROJECTS VIEWED IN PAGE */
 .project-link {
     text-decoration: none;
     color: inherit;
@@ -140,34 +160,46 @@ p {
 	padding-left: 2.5%;
 }
 
+.project-container{
+	display: flex;
+	max-width: 75%;
+
+	/* Set Margins */
+	margin: 0 12.5% 0 12.5%;
+}
+
+.project-container ul{
+	padding: 0 3% 0 3%;
+	/* Margin Auto to Set ul's to correct size */
+	margin: auto;
+}
+
 .project-header{
-	font-size: 28px;
+	font-size: 34px;
 	text-align: left;
 	padding-left: 2.5%;
 }
 
 .project-overview{
+	display: inline-block;
 	max-width: 50%;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.project-overview-r{
-	text-align: left;
-	width: 40%;
-}
-
-.project-overview-l{
-	text-align: right;
-	width: 40%;
-}
-
-.project-img{
+.project-overview img{
 	max-width: 90%;
-	padding: 2.5% 5% 2.5% 5%;
+	margin: 0 5% 0 5%;
+}
+
+.project-overview p{
+	text-align: center;
 }
 
 /* ABOUT ME */
 .about-me-left {
-	width: 50%;
+	width: 70%;
 	display: inline-block;
 	height: 80%;
 	min-height: 450px;
@@ -187,7 +219,7 @@ p {
 }
 
 .about-me-right {
-	width: 50%;
+	width: 30%;
 	height: 80%;
 	min-height: 450px;
 	display: inline-block;
@@ -224,7 +256,7 @@ footer{
 	height: 150px;
 	width: 100%;
 	background-color: whitesmoke;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 }
 
