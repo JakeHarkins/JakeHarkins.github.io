@@ -136,11 +136,22 @@ p {
 	padding: 1% 0 1% 5%;
 }
 
+.badge-download{
+	padding: 0 5% 0 5%;
+}
+
 .badge-div{
 	display: flex;
 
 	/* Set Badge Div to Far Left */
 	margin: 2.5% 4% 2.5% 0;
+}
+
+.download-div{
+	max-width: 70%;
+
+	padding: 0 15% 0 15%;
+	margin: 0 auto 0 auto;
 }
 
 /* PROJECTS VIEWED IN PAGE */
@@ -256,6 +267,13 @@ footer{
 	height: 150px;
 	width: 100%;
 	background-color: whitesmoke;
+	/*
+	position: absolute;
+	bottom: 0;
+	*/
+}
+
+.footer-home{
 	position: absolute;
 	bottom: 0;
 }
