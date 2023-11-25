@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>About | Jake Harkins</title>
+<title>Constructing Change | Jake Harkins</title>
 <link href='/styles.css' rel='stylesheet'/>
 <link rel="icon" href="/images/profile_square.png">
 <meta charset="utf-8">
@@ -52,7 +52,13 @@
 	<div class="project-container">
 		<div class="project-overview">
 			<h1>Dialogue</h1>
-			<p>The Dialogue system is used to let the user interact with NPCs around the game world. The Dialogue is shown letter-by-letter to the Player, improving readability. The Dialogue displays have support for Rich Text Format tags for individual characters, and prevents RTF tags from displaying with the letter-by-letter display.</p>
+			<p>The Dialogue system is used to guide the Player through the world, by helping to explain locations and objectives through the NPCs. 
+				Dialogue is shown letter-by-letter to help readability, the speed of which can be adjusted before runtime using the pop-up prefab.
+				The Dialogue displays have support for Rich Text Format tags for individual characters, and prevents RTF tags from displaying with the letter-by-letter display.</p>
+			<p>
+				Additionally, Dialogue uses a set of Cinemachine cameras in order to help convey how Objectives are connected, or to highlight certain areas of the level.
+				This is done by using the additional cameras to pan/zoom once dialogue is entered.
+			</p>
 		</div><div class="project-overview">
 			<img src="/projects/constructing-change/CC_dialogue.png">
 		</div>
@@ -64,6 +70,63 @@
 			<h1>NPC Randomiser</h1>
 			<p>The NPC Randomiser is used to populate the world with NPCs. There are options for randomisation, or manually setting up the character, which lets us take NPCs through multiple levels. This allows for characters to be preserved from scene to scene, which allows for characters like the Site Manager to lead the Player through each level.</p>
 			<p>The amount of customisation options available for NPCs is expandable by specifying new colours, hair styles or accessories for the NPC prefab. Adding these to the NPC Prefab before runtime (In Editor) will allow any NPC to use the new customisation options.</p>
+		</div>
+	</div>
+	<div class="project-container">
+		<div class="project-overview">
+			<h1>Objectives System</h1>
+			<p>The Objective system is used to guide the Player through the world, getting them to talk to certain NPCs and visit points of interest around the levels. The Objective system can be expanded to include multiple objective types, which currently include:</p>
+			<ol>Range Objective (Completion by Distance)</ol>
+			<ol>Collect Objective (Completion by Collection of Item/s)</ol>
+			<ol>Checkpoints (Reach Location)</ol>
+			<p>The Objectives in game may be added at or before runtime, and will be added to the Objectives window if they are activated after runtime. While not implemented, the Objective system has some colourblind support. The completion color of objectives can be changed before runtime.</p>
+		</div><div class="project-overview">
+			<img src="/projects/constructing-change/CC_objectives.png">
+		</div>
+	</div>
+
+	<h1>Image Gallery</h1>
+	<div class="screenshot-gallery">
+		<div class="gallery-item">
+			<img src="/projects/constructing-change/CC_main-menu.jpg">
+			<div class="overlay">
+				<div class="caption">Main Menu View</div>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="/projects/constructing-change/CC_lvl-select.jpg">
+			<div class="overlay">
+				<div class="caption">Level Selection Screen</div>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="/projects/constructing-change/CC_lvl-1-1.jpg">
+			<div class="overlay">
+				<div class="caption">Player view of Level 1</div>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="/projects/constructing-change/CC_lvl-2-1.jpg">
+			<div class="overlay">
+				<div class="caption">Player view of Level 2</div>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="/projects/constructing-change/CC_lvl-2-2.jpg">
+			<div class="overlay">
+				<div class="caption">Player view of Level 2</div>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="/projects/constructing-change/CC_lvl-3-1.jpg">
+			<div class="overlay">
+				<div class="caption">Player view of Level 3</div>
+			</div>
 		</div>
 	</div>
 

@@ -319,3 +319,52 @@ footer h1{
 	height: 20%;
 	text-align: left;
 }
+
+/* Style the container for the gallery */
+.screenshot-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+	gap: 16px;
+	padding: 16px;
+  }
+  
+  /* Style each gallery item (image) */
+  .gallery-item {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the image within each gallery item */
+  .gallery-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
+  /* Style the overlay for hover effect */
+  .gallery-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Show overlay on hover */
+  .gallery-item:hover .overlay {
+	opacity: 1;
+  }
+  
+  /* Style the caption within the overlay */
+  .gallery-item .caption {
+	text-align: center;
+  }
