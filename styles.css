@@ -3,6 +3,7 @@
 
 /* Roboto Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Teko&display=swap');
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -73,6 +74,7 @@ p {
 }
 
 .link-home{
+	font-family: 'Teko';
 	display: inline-block;
 	min-width: 100%;
 }
@@ -173,10 +175,10 @@ p {
 
 .project-container{
 	display: flex;
-	max-width: 75%;
+	max-width: 80%;
 
 	/* Set Margins */
-	margin: 0 12.5% 0 12.5%;
+	margin: 0 10% 0 10%;
 }
 
 .project-container ul{
@@ -201,7 +203,7 @@ p {
 
 .project-overview img{
 	max-width: 90%;
-	margin: 0 5% 0 5%;
+	margin: auto 5% auto 5%;
 }
 
 .project-overview p{
