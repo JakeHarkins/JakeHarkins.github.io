@@ -1,0 +1,284 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Variables */
+:root{
+    --background-colour: #22333B;
+    --nav-colour: #1A252B;
+    --text-colour: #EAE0D5;
+    --header-img: url("/projects/constructing-change/CC_main-menu.png");
+}
+
+/* Font Settings */
+h1{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36pt;
+    color: var(--text-colour);
+}
+
+h2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24pt;
+    color: var(--text-colour);
+}
+
+p, a{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+    color: var(--text-colour);
+
+    /* Text Decoration for <a> */
+    text-decoration: none;
+}
+
+/* Smooth Scrolling for ID'd Divs */
+html{
+    scroll-behavior: smooth;
+}
+
+/* General Body */
+body{
+    margin: 0;
+
+    /* Set Font Default/Fallback */
+    font-family: "Outfit", sans-serif;
+
+    /* Set BG */
+    background-color: var(--background-colour);
+
+    width: 100%;
+}
+
+.outer-row-container{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.inner-column-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+/* General Side Nav */
+.sidenav {
+    background-color: var(--nav-colour);
+
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top: 0;
+
+    height: 100vh;
+    width: 15%;
+    max-width: 150px;
+
+    float: left;
+}
+
+.sidenav a{
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Header Setup */
+.header-image{
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: var(--header-img);
+    background-color: #22333B;
+}
+
+.header-image h1{
+    text-align: center;
+    vertical-align: middle;
+
+    padding-top: 10%;
+}
+
+.header-image h2{
+    text-align: center;
+}
+
+/* Intro Section */
+.intro-section{
+    width: 80%;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-section img{
+    width: 40%;
+
+    max-width: 360px;
+    max-height: 360px;
+}
+
+.intro-section div{
+    width: 50%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-section p{
+    margin-top: 0;
+}
+
+/* Div Information Setup */
+.information-section{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Skills */
+.skills-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.heading-logo-holder{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-text{
+    width: 80%;
+}
+
+.skills-section img{
+    max-width: 64px;
+    max-height: 64px;
+}
+
+li{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+    color: var(--text-colour);
+}
+
+/* Projects Overview */
+.project-entry{
+    background-color: var(--nav-colour);
+
+    border-radius: 25px;
+
+    width: 100%;
+    height: 265px;
+    
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.project-entry p{
+    width: 90%;
+}
+
+.project-entry img{
+    max-height: 80%;
+    width: 30%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    align-self: center;
+}
+
+.project-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text-container img{
+    max-width: 64px;
+
+    align-self: flex-start;
+    padding: 0;
+}
+
+/* Contact/Links */
+/* Div class to hold contact links */
+.links-holder{
+    display: flex;
+    width: 90%;
+}
+
+.links-holder a{
+    width: 25%;
+
+    align-self: center;
+    align-self: flex-end;
+}
+
+.links-holder p{
+    text-align: center;
+}
+
+.links-holder img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 64px;
+    max-height: 64px;
+}
+
+/* Header Setup */
+.index-header{
+    width: 100%;
+    height: 560px;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--nav-colour);
+
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer p{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Projects Page */

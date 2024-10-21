@@ -1,5 +1,5 @@
 /* Style Document */
-/* All Styling done by Jake Harkins, 2023 */
+/* All Styling done by Jake Harkins, 2023 to 2024 */
 
 /* Roboto Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -31,8 +31,6 @@ p {
 	color: #000000;
 	text-align: center;
 	width: 85%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .container{
@@ -131,6 +129,14 @@ p {
 	padding: 1%;
 }
 
+.project-small .overview-img-blk-override{
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 220px;
+	padding: 1%;
+	filter: overlay-color('#000000')
+}
+
 /* PROJECT BADGES */
 .badge{
 	display: inline-block;
@@ -212,8 +218,8 @@ p {
 
 /* ABOUT ME */
 .about-me-left {
-	width: 70%;
-	display: inline-block;
+	width: 40%;
+	display: flex;
 	height: 80%;
 	min-height: 450px;
 }
@@ -222,26 +228,31 @@ p {
 	vertical-align: top;
 	font-size: 22px;
 	text-align: left;
-	padding: 0 10% 0 10%;
 }
 
 .about-me-left h1{
-	padding: 10% 10% 0 10%;
 	font-size: 22px;
 	text-align: left;
 }
 
+.about-me-left img{
+	max-width: 400px;
+	max-height: 400px;
+	margin-right: 15%;
+	margin-left: auto;
+}
+
 .about-me-right {
-	width: 30%;
+	width: 60%;
 	height: 80%;
 	min-height: 450px;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 }
 
 .about-me-right h1{
 	font-size: 20px;
 	text-align: left;
-	padding-top: 10%;
 }
 
 .about-me-right h2{
@@ -251,6 +262,7 @@ p {
 
 .about-me-right p{
 	text-align: left;
+	display: inline-block;
 }
 
 /* Main Body */
