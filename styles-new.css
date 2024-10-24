@@ -229,6 +229,27 @@ li{
     padding: 0;
 }
 
+/* Projects Image Gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(750px, 2fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Contact/Links */
 /* Div class to hold contact links */
 .links-holder{
