@@ -177,6 +177,8 @@ body{
 .skills-section img{
     max-width: 64px;
     max-height: 64px;
+
+    padding-right: 2.5%;
 }
 
 li{
