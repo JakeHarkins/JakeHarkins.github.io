@@ -9,7 +9,7 @@
     --header-img: url("/projects/constructing-change/CC_main-menu.png");
 }
 
-/* Font Settings */
+/* #region Font Settings */
 h1{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -28,7 +28,7 @@ h2{
     color: var(--text-colour);
 }
 
-p, a{
+p, a, li{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -39,10 +39,12 @@ p, a{
     /* Text Decoration for <a> */
     text-decoration: none;
 }
+/* #endregion */
 
 /* Smooth Scrolling for ID'd Divs */
 html{
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 /* General Body */
@@ -55,21 +57,19 @@ body{
     /* Set BG */
     background-color: var(--background-colour);
 
-    width: 100%;
+    width: 100vw;
+
+    /* Define Column for Mobile Top Nav */
+    display: flex;
+    flex-direction: column;
 }
 
-.outer-row-container{
+.content-container{
     display: flex;
     flex-direction: column;
 
-    width: 100%;
-}
-
-.inner-column-container{
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
+    width: 90%;
+    padding: 0 5% 0 5%;
 }
 
 /* Mobile Styling */
@@ -104,12 +104,6 @@ body{
     text-align: center;
 }
 
-.intro-section{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 .intro-section img{
     width: 40%;
 
@@ -119,12 +113,6 @@ body{
     padding-right: 2.5%;
 }
 
-.information-section{
-    width: 90%;
-
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
 .project-entry{
     background-color: var(--nav-colour);
@@ -167,48 +155,37 @@ body{
     margin-bottom: 2%;
 }
 
-.skills-section img{
+.skills-imgs img{
     max-width: 48px;
     max-height: 48px;
 }
 
 .links-holder{
+    /* Holder Width */
+    width: 90%;
+    padding: 0 5% 0 5%;
+
+    /* Setup Grid */
     display: grid;
-
-    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
-
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px;
+    gap: 60px;
 }
 
-.links-holder a{
-    position: relative;
+.links-holder link{
+    aspect-ratio: 1;
 
-    display: block;
-
-    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer{
     background-color: var(--nav-colour);
 
     width: 100vw;
-}
 
-.footer p{
-    width: 100%;
     text-align: center;
-}
-
-li{
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12pt;
-    color: var(--text-colour);
-
-    padding-bottom: 5px;
 }
 
 .skills-logo-holder img{
@@ -218,12 +195,10 @@ li{
 /* #region Desktop Styling */
 @media only screen and (min-width: 760px){
 
-/* Outer Div Styling */
-.outer-row-container{
+body{
+    /* Override Flex for Desktop */
     display: flex;
     flex-direction: row;
-
-    width: 100%;
 }
 
 /* General Side Nav */
@@ -233,23 +208,34 @@ li{
     display: flex;
     flex-direction: column;
 
+    overflow-x: hidden;
+
     position: sticky;
     top: 0;
 
     height: 100vh;
     width: 15%;
     max-width: 150px;
-
-    float: left;
 }
 
 .navigation a{
-    padding-top: 40px;
+    padding: 20px 0 20px 0;
     text-align: center;
+}
+
+/* General Content */
+.content-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    padding: 0 5% 0 5%;
 }
 
 /* Header Setup */
 .header-image{
+    aspect-ratio: 1;
+
     box-sizing: border-box;
 
     width: 100%;
@@ -258,27 +244,15 @@ li{
     display: flex;
     flex-direction: column;
 
+    /* Center all text in div */
+    text-align: center;
+
     background-image: var(--header-img);
     background-color: #22333B;
 }
 
-.header-image h1{
-    text-align: center;
-    vertical-align: middle;
-
-    padding-top: 10%;
-}
-
-.header-image h2{
-    text-align: center;
-}
-
 /* Intro Section */
 .intro-section{
-    width: 80%;
-
-    padding-left: 10%;
-    padding-right: 10%;
 
     display: flex;
     flex-direction: row;
@@ -305,17 +279,17 @@ li{
     margin-top: 0;
 }
 
-/* Div Information Setup */
-.information-section{
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-/* Skills */
-.skills-section{
+/* #region Skills */
+.skills-imgs{
     display: flex;
     flex-direction: row;
+}
+
+.skills-imgs img{
+    max-width: 64px;
+    max-height: 64px;
+
+    padding-right: 2.5%;
 }
 
 .heading-logo-holder{
@@ -325,24 +299,10 @@ li{
 }
 
 .skills-text{
-    width: 80%;
+    display: flex;
+    flex-direction: row;
 }
-
-.skills-section img{
-    max-width: 64px;
-    max-height: 64px;
-
-    padding-right: 2.5%;
-}
-
-li{
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12pt;
-    color: var(--text-colour);
-}
+/* #endregion */
 
 /* Projects Overview */
 .project-entry{
@@ -351,7 +311,6 @@ li{
     border-radius: 25px;
 
     width: 100%;
-    height: 265px;
     
     margin-bottom: 40px;
 
@@ -359,32 +318,11 @@ li{
     flex-direction: row;
 }
 
-.project-entry p{
-    width: 90%;
-}
-
 .project-entry img{
-    max-height: 80%;
+    aspect-ratio: 16 / 9;
+
     width: 30%;
-
-    max-width: 420px;
-
-    padding-left: 5%;
-    padding-right: 5%;
-
-    align-self: center;
-}
-
-.project-text-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.project-text-container img{
-    max-width: 64px;
-
-    align-self: flex-start;
-    padding: 0;
+    padding: 0% 5% 0 5%;
 }
 
 /* Projects Image Gallery */
@@ -412,17 +350,12 @@ li{
 /* Div class to hold contact links */
 .links-holder{
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 90%;
-}
+    padding: 0 5% 0 5%;
 
-.links-holder a{
-    width: 25%;
-
-    align-self: center;
-    align-self: flex-end;
-}
-
-.links-holder p{
     text-align: center;
 }
 
@@ -448,16 +381,8 @@ li{
     width: 100%;
     height: 45px;
 
-    display: flex;
-    align-items: center;
-}
-
-.footer p{
-    width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
     text-align: center;
-    margin: 0;
+    margin: auto;
 }
 }
 

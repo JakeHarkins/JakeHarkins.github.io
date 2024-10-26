@@ -10,183 +10,193 @@
 </head>
 
 <!-- Overflow Controls Sidenav Position-->
-<body style="overflow-y: scroll;">
-    <!-- Display Sidenav -->
-    <div class="outer-row-container">
-        <div class="navigation">
-            <a  href="#home">Home</a>
-            <a  href="#projects">Projects</a>
-            <a  href="#skills">Skills</a>
-            <a  href="#experience">Experience</a>
-            <a  href="#education">Education</a>
-            <a  href="#contacts">Contact</a>
+<body>
+    <!-- Navigation -->
+    <div class="navigation">
+        <a  href="#home">Home</a>
+        <a  href="#projects">Projects</a>
+        <a  href="#skills">Skills</a>
+        <a  href="#experience">Experience</a>
+        <a  href="#education">Education</a>
+        <a  href="#contacts">Contact</a>
+    </div>
+
+    <!-- Content Body -->
+    <div class="content-container">
+        <!-- Header Image -->
+        <div class="header-image" id="home">
+            <h1 class="outfit-heading">Jake Harkins</h1>
+            <h2 class="outfit-subheading">Programmer, Gameplay Design</h2>
         </div>
-        <div class="inner-column-container">
-            <!-- Header Image -->
-            <div class="header-image" id="home">
-                <h1 class="outfit-heading">Jake Harkins</h1>
-                <h2 class="outfit-subheading">Programmer, Gameplay Design</h2>
+
+        <!-- Introduction -->
+        <h1>Hi, I'm Jake -</h1>
+        <div class="intro-section">
+            <img src="/images/linkedin_square.png">
+
+            <div>
+                <p>
+                    -a hard-working, team oriented programmer with a keen interest in writing clean, readable code that can expand with the games I am involved with. I am someone who is always 
+                    willing to learn new skills and generally expand my knowledge into a variety of fields.
+                </p>
+                <p>
+                    Below you can find summaries of the Projects I have been apart of, as well as more detailed breakdowns
+                    of my roles and responsibilities in those same projects.
+                </p>
             </div>
+        </div>
 
-            <!-- Introduction -->
-            <h1 class="information-section">Hi, I'm Jake -</h1>
-            <div class="intro-section">
-                <img src="/images/linkedin_square.png">
-
-                <div>
-                    <p>
-                        -a hard-working, team oriented programmer with a keen interest in writing clean, readable code that can expand with the games I am involved with. I am someone who is always 
-                        willing to learn new skills and generally expand my knowledge into a variety of fields.
-                    </p>
-                    <p>
-                        Below you can find summaries of the Projects I have been apart of, as well as more detailed breakdowns
-                        of my roles and responsibilities in those same projects.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Projects Overview -->
-            <div class="information-section" id="projects">
-                <h1 class="outfit-heading">Projects</h1>
-                <p>Below is a summary of the most recent projects I have been apart of, or developed myself.</p>
-                <!-- BMW Project-->
-                <a>
-                    <div class="project-entry">
-                        <img src="/images/BMW-DsgnAcademy.png">
-                        <div class="project-text-container">
-                            <h2>BMW Design Academy Project</h2>
-                            <p>A game experience developed as apart of the IGB300 + IGB301 Capstone Project. This project currently remains under NDA, and I am not at liberty to publicly discuss details about the game.
-    
-                                Developed with Team Acuity.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Constructing Change -->
-                <a href="/projects/new-constructing-change.html">
+        <!-- Projects Overview -->
+        <div id="projects">
+            <h1 class="outfit-heading">Projects</h1>
+            <p>Below is a summary of the most recent projects I have been apart of, or developed myself.</p>
+            <!-- BMW Project -->
+            <a>
                 <div class="project-entry">
-                    <img src="/images/cc_logo.png">
-                    <div class="project-text-container">
-                        <h2>Constructing Change</h1>
-                        <p>
-                            A game created for Awesome Women In Construction (AWIC) during QUT’s IGB200 unit in my 2nd year of university. Constructing Change aims to introduce and encourage young women to join the construction industry, and show them potential pathways they may take. Developed with Inspira Games.
+                    <img src="/images/BMW-DsgnAcademy.png">
+                    <div>
+                        <h2>BMW Design Academy Project</h2>
+                        <p>A game experience developed as apart of the IGB300 + IGB301 Capstone Project. This project currently remains under NDA, and I am not at liberty to publicly discuss details about the game.
+
+                            Developed with Team Acuity.
                         </p>
                     </div>
                 </div>
-                </a>
+            </a>
+            <!-- Constructing Change -->
+            <a href="/projects/new-constructing-change.html">
+            <div class="project-entry">
+                <img src="/images/cc_logo.png">
+                <div class="project-text-container">
+                    <h2>Constructing Change</h1>
+                    <p>
+                        A game created for Awesome Women In Construction (AWIC) during QUT’s IGB200 unit in my 2nd year of university. Constructing Change aims to introduce and encourage young women to join the construction industry, and show them potential pathways they may take. Developed with Inspira Games.
+                    </p>
+                </div>
             </div>
+            </a>
+        </div>
 
-            <!-- Skills Overview -->
-            <div class="information-section" id="skills">
-                <h1 class="outfit-heading">Skills</h1>
-                <div class="skills-section">
-                    <div class="heading-logo-holder">
-                        <h2>Game Engines</h2>
-                        <div class="skills-logo-holder">
-                            <img src="/images/svg-logos/unity.svg">
-                        </div>
-                    </div>
-                    <div class="heading-logo-holder">
-                        <h2>Languages</h2>
-                        <div class="skills-logo-holder">
-                            <img src="/images/svg-logos/csharp.svg">
-                            <img src="/images/svg-logos/python.svg">
-                        </div>
-                    </div>
-                    <div class="heading-logo-holder">
-                        <h2>Software</h2>
-                        <div class="skills-logo-holder">
-                            <img src="/images/svg-logos/github.svg">
-                            <img src="/images/svg-logos/visual-studio.svg">
-                        </div>
+        <!-- Skills Overview -->
+        <div id="skills">
+            <h1>Skills</h1>
+            <!-- Image Overview -->
+            <div class="skills-imgs">
+                <div class="heading-logo-holder">
+                    <h2>Game Engines</h2>
+                    <div class="skills-logo-holder">
+                        <img src="/images/svg-logos/unity.svg">
                     </div>
                 </div>
-                <!-- Text Overview -->
-                <div class="skills-section">
-                    <div>
-                        <ul class="skills-text">
-                            <li>Gameplay Programming</li>
-                            <li>Asymmetric Multiplayer</li>
-                            <li>Non-Player Character Control</li>
-                        </ul>
+                <div class="heading-logo-holder">
+                    <h2>Languages</h2>
+                    <div class="skills-logo-holder">
+                        <img src="/images/svg-logos/csharp.svg">
+                        <img src="/images/svg-logos/python.svg">
                     </div>
-                    <div>
-                        <ul>
-                            <li>Unity VR</li>
-                            <li>Early Game Design Iteration</li>
-                            <li>Documentation and Diagram Preparation</li>
-                        </ul>
+                </div>
+                <div class="heading-logo-holder">
+                    <h2>Software</h2>
+                    <div class="skills-logo-holder">
+                        <img src="/images/svg-logos/github.svg">
+                        <img src="/images/svg-logos/visual-studio.svg">
                     </div>
                 </div>
             </div>
-
-            <!-- Professional Experience -->
-            <div class="information-section" id="experience">
-                <h1>Experience</h1>
-                <p>Below details my current experience in Games and Games Related fields, such as Academia.</p>
-                <h2>QUT - Peer Mentoring (IGB100, IGB200)</h2>
-                <p><b>March 2024 - Current</b></p>
-                <p>During my time as a Peer Mentor I assisted both 1st (IGB100) and 2nd Year (IGB200) Students in their Studio Projects in pre-production and production phases. While my focus was Programming, I assisted in early Design iteration for a variety of student teams
-                    to promote early scope cutting and ensure Teams could build a game which met assessment requirements (IGB100) and Industry Partner requirements (IGB200). I also assisted Students with Presentation preparation for a series of presentations performed
-                    during the semester.
-                </p>
-                
-                <h2>QUT - Research Assistant (RA)</h2>
-                <p><b>September 2024 - Current</b></p>
-                <p>
-                    In my role as an RA, I assisted in the facilitation of Playtesting sessions for a series of games and educational projects
-                    targeted towards a variety of demographics. I also conducted a series of testing sessions to build a background catalogue of knowledge
-                    in order to form a basis for designing a game experience.
-                    Additionally, I assisted the observation of participants for a selection of studies conducted at QUT.
-                </p>
+            <!-- Text Overview -->
+            <div class="skills-text">
+                <ul>
+                    <li>Gameplay Programming</li>
+                    <li>Asymmetric Multiplayer</li>
+                    <li>Non-Player Character Control</li>
+                </ul>
+                <ul>
+                    <li>Unity VR</li>
+                    <li>Early Game Design Iteration</li>
+                    <li>Documentation and Diagram Preparation</li>
+                </ul>
             </div>
+        </div>
 
-            <!-- Education -->
-            <div class="information-section" id="education">
-                <h1>Education</h1>
-                <h2>QUT - Bachelor of Games and Interactive Environments/Bachelor of Science (BGIE/BoS)</h2>
-                <p><b>2021 - Current</b> GPA 6.11</p>
-                <!-- BGIE -->
-                <p> 
-                    In my BGIE Degree, I major in Software Technologies, with an interest in a variety of technologies such as VR and desktop
-                    applications. 
-                </p>
-                <!-- BoS -->
-                <p>
-                    In my BoS Degree, I major in Chemistry, with a key interest in Inorganic Chemistry and its greater applications/uses in the field.
-                </p>
-            </div>
+        <!-- Professional Experience -->
+        <div id="experience">
+            <h1>Experience</h1>
+            <p>Below details my current experience in Games and Games Related fields, such as Academia.</p>
+            <h2>QUT - Peer Mentoring (IGB100, IGB200)</h2>
+            <p><b>March 2024 - Current</b></p>
+            <p>During my time as a Peer Mentor I assisted both 1st (IGB100) and 2nd Year (IGB200) Students in their Studio Projects in pre-production and production phases. While my focus was Programming, I assisted in early Design iteration for a variety of student teams
+                to promote early scope cutting and ensure Teams could build a game which met assessment requirements (IGB100) and Industry Partner requirements (IGB200). I also assisted Students with Presentation preparation for a series of presentations performed
+                during the semester.
+            </p>
+            
+            <h2>QUT - Research Assistant (RA)</h2>
+            <p><b>September 2024 - Current</b></p>
+            <p>
+                In my role as an RA, I assisted in the facilitation of Playtesting sessions for a series of games and educational projects
+                targeted towards a variety of demographics. I also conducted a series of testing sessions to build a background catalogue of knowledge
+                in order to form a basis for designing a game experience.
+                Additionally, I assisted the observation of participants for a selection of studies conducted at QUT.
+            </p>
+        </div>
 
-            <!-- Contacts & Links-->
-            <div class="information-section" id="contacts">
-                <h1>Contact/Links</h1>
-                <p>I am always happy to have a chat on any platforms below, feel free reach out at any time. You are most likely to reach me on LinkedIn or Discord as these are my most active platforms.</p>
+        <!-- Education -->
+        <div id="education">
+            <h1>Education</h1>
+            <h2>QUT - Bachelor of Games and Interactive Environments/Bachelor of Science (BGIE/BoS)</h2>
+            <p><b>2021 - Current</b> GPA 6.11</p>
+            <!-- BGIE -->
+            <p> 
+                In my BGIE Degree, I major in Software Technologies, with an interest in a variety of technologies such as VR and desktop
+                applications. 
+            </p>
+            <!-- BoS -->
+            <p>
+                In my BoS Degree, I major in Chemistry, with a key interest in Inorganic Chemistry and its greater applications/uses in the field.
+            </p>
+        </div>
 
-                <div class="links-holder">
-                   <a href="https://www.linkedin.com/in/-jakeharkins" target="_blank">
-                        <img src="/images/svg-logos/linkedin.svg">
-                        <p>Jake Harkins</p>
-                    </a>
-                    <a>
-                        <img src="/images/svg-logos/discord.svg">
-                        <p>@jakeharkins</p>
-                   </a>
-                    <a href="mailto:jakeharkins191@gmail.com" target="_blank">
-                        <img src="/images/svg-logos/gmail.svg">
-                        <p>jakeharkins191@gmail.com</p>
-                    </a>
-                    <a href="https://jonkdev.itch.io/" target="_blank">
-                        <img src="/images/svg-logos/itch.io.svg">
-                        <p>@JonkDev</p>
-                    </a>
+        <!-- Contacts & Links-->
+        <div id="contacts">
+            <h1>Contact/Links</h1>
+            <p>I am always happy to have a chat on any platforms below, feel free reach out at any time. You are most likely to reach me on LinkedIn or Discord as these are my most active platforms.</p>
+
+            <div class="links-holder">
+                <div class="link">
+                    <img src="/images/svg-logos/linkedin.svg">
+                    <p>Jake Harkins</p>
                 </div>
-            </div>
 
-            <div class="footer">
-                <p>Designed, Built and Developed by Jake Harkins, 2024.</p>
+                <div class="link">
+                    <img src="/images/svg-logos/discord.svg">
+                    <p>@jakeharkins</p>
+                </div>
+
+                <div class="link">
+                    <img src="/images/svg-logos/gmail.svg">
+                    <p>jakeharkins191@gmail.com</p>
+                </div>
+
+                <div class="link">
+                    <img src="/images/svg-logos/itch.io.svg">
+                    <p>@JonkDev</p>
+                </div>
+
+            <!--
+            <a href="https://www.linkedin.com/in/-jakeharkins" target="_blank">
+            </a>
+            <a href="mailto:jakeharkins191@gmail.com" target="_blank">  
+            </a>
+            <a href="https://jonkdev.itch.io/" target="_blank"> 
+            </a>
+            -->
             </div>
         </div>
     </div>
-</body>
 
+    <!--
+    <div class="footer">
+        <p>Designed, Built and Developed by Jake Harkins, 2024.</p>
+    </div>
+    -->
+</body>
 </html>
