@@ -60,7 +60,7 @@ body{
 
 .outer-row-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     width: 100%;
 }
@@ -72,8 +72,162 @@ body{
     width: 100%;
 }
 
+/* Mobile Styling */
+.navigation{
+    background-color: var(--nav-colour);
+
+    display: flex;
+    flex-direction: row;
+
+    position: sticky;
+    position: -webkit-sticky;
+
+    top: 0;
+
+    width: 100vw;
+    height: 45px;
+
+    overflow-x: scroll;
+}
+
+.navigation a{
+    padding-left: 3%;
+    padding-right: 3%;
+
+    align-self: center;
+}
+
+.header-image{
+    width: 100%;
+    height: 360px;
+
+    text-align: center;
+}
+
+.intro-section{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.intro-section img{
+    width: 40%;
+
+    max-width: 140px;
+    max-height: 140px;
+
+    padding-right: 2.5%;
+}
+
+.information-section{
+    width: 90%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.project-entry{
+    background-color: var(--nav-colour);
+    width: 100%;
+
+    border-radius: 25px;
+
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-entry p{
+    width: 90%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.project-entry img{
+    width: 80%;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    padding-top: 5%;
+}
+
+.project-entry h2{
+    width: 90%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.skills-section img{
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.links-holder{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.links-holder a{
+    position: relative;
+
+    display: block;
+
+    min-width: 200px;
+}
+
+.footer{
+    background-color: var(--nav-colour);
+
+    width: 100vw;
+}
+
+.footer p{
+    width: 100%;
+    text-align: center;
+}
+
+li{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+    color: var(--text-colour);
+
+    padding-bottom: 5px;
+}
+
+.skills-logo-holder img{
+    padding-right: 2.5%;
+}
+
+/* #region Desktop Styling */
+@media only screen and (min-width: 760px){
+
+/* Outer Div Styling */
+.outer-row-container{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
 /* General Side Nav */
-.sidenav {
+.navigation {
     background-color: var(--nav-colour);
 
     display: flex;
@@ -89,7 +243,7 @@ body{
     float: left;
 }
 
-.sidenav a{
+.navigation a{
     padding-top: 40px;
     text-align: center;
 }
@@ -305,5 +459,6 @@ li{
     text-align: center;
     margin: 0;
 }
+}
 
-/* Projects Page */
+/* #endregion Desktop Styling */
