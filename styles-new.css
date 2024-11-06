@@ -435,6 +435,8 @@ body{
     justify-content: space-between;
 
     text-align: center;
+
+    width: 95%;
 }
 
 .links-holder img{
