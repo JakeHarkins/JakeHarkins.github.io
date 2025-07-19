@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jake Harkins - VRES 2025</title>
+    <link href="/styles-new.css" rel='stylesheet'/>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<!-- Overflow Controls Sidenav Position-->
+<body>
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="/index#home">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#findings">Findings</a>
+        <a href="#reflection">Reflection</a>
+    </div>
+
+    <div class="content-container">
+        <div class="information-section" id="overview">
+            <!-- Header -->
+            <a href="/index#projects"><h2>../Projects/</h2></a>
+            <h1>VRES 2025</h1>
+
+            <!-- Overview -->
+            <p>
+                This research was completed as part of QUT's Vacation Research Education Scheme (VRES) program, intended to introduce students to research prior to Honours, Masters or PhD courses. This reseach was conducted from November 2024 to February 2025 during the Summer Period.
+                This project was focussed on the potential inclusion of Large Language Models (LLMs) to VR games and experiences to improve tutorialisation for Players/Users. The desired outcomes of the project were to: produce a literature review of current tutorial techniques, determine current Player struggles and determine the feasability of a modular tutorial tool. Player struggles were determined
+                by a survey sent out to VR Developers and Showcasers across Discord and LinkedIn. The initial modular prototype was developed in Unity using OpenXR's packages built in to Unity's VR template.
+            </p>
+            <p>
+                The literature review found that current tutorial techniques do not significantly improve Player's game performance, but does improve measures such as motivation and mental load, positive emotions such as joy were increased, 
+                and negative emotions were generally decreased. These findings highlight that further tutorialisation will likely improve Player emotions and motivation, but will have no significant improvement to Player performance, and as such future study shoud
+                focus on these measures rather than performance.
+                Additionally, the papers included in this literature review make strong recommendations for personalised support in VR tutorial experiences, which gives a strong basis to introduce an LLM based NPC to a VR tutorial experience.
+            </p>
+        </div>
+
+        <!-- Abstract -->
+        <div class="information-section" id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Virtual Reality (VR) applications have seen increased usage in several fields, including immersive experiences such as games, educational tools and training due to the accessibility of powerful consumer grade hardware. 
+                Despite this growth, VR tutorials used for introducing Players have not significantly changed, still following basic tutorial methods such as instructional screens. 
+                We aim to determine current Player struggles with VR tutorials and onboarding experiences and explore a prototype modular system for VR experiences utilising an LLM to provide personalised assistance to Players. We determine Player struggles by a survey of VR Developers and Showcasers, additionally, we developed a basic tutorial experience in Unity to determine the viability of a modular tutorial experience. 
+                This research finds strong support for personalised assistance via an LLM for the improvement of tutorial experiences for Players, as well as strong support for a modular tool to reduce VR development time.
+            </p>
+        </div>
+
+        <!-- Findings -->
+        <div class="information-section" id="findings">
+            <h2>Findings</h2>
+            <p>
+                The posted questionnaire of Developers and Showcasers primarily found that Player's issues with tutorials arise from the introduction of VR input methods, including namings, physical button positions and gestures; these factors are especially true for
+                users who have had minimal interaction with VR platforms. Developers generally agreed with the proposed features assisting Players, namely the introduction of the LLM in order to walk Players through the controls in a similar fashion to how a developer
+                may guide a Player at a convention or showcasing of a project.
+            </p>
+            <p>
+                The developed system prototype shows some viability, with modules being able to progress automatically upon completion, and utilise the LLM to provide explanations for the currently active module. 
+                Modules can be customised within Unity and added to the tutorial utilising a drag-and-drop system. To determine the abilities of the system it must be tested among developers by allowing them to customise a module or series of modules. 
+                Additionally, further testing with players will be required to determine the accuracy of voice recognition to ensure that all players are able to use the LLM features without issue. 
+            </p>
+            <p>
+                Overall, this research finds strong support for the inclusion of LLMs into tutorial experiences. Developers indicated the inclusion of the LLM will likely assist Players by providing additional support without the need for the Developer to guide a Player in a tutorial themselves. 
+                The results also indicate that the presence of a modular tool could reduce the development time for Developers, leading to better game quality due to increased focus on the development of core game features over tutorials.
+            </p>
+        </div>
+
+        <!-- Reflection -->
+        <div class="information-section" id="reflection">
+            <h2>Reflection</h2>
+            <p>
+                This project acted as my first experience with Human-Computer Interaction (HCI) Research, focusing on the interaction of Users with both VR and AI through an LLM. This research consisted primarily of three (3) components, the aforementioned literature review,
+                a Developer questionnaire, and a prototype Tutorial Experience to determine the viability of the modular tool. The literature review acted as the basis for both the prototype development and Developer questionnaire, and further allowed me to improve my research
+                skills. This has also allowed me to better understand general research for games projects, which will help with market research in future for the pre-development phase of future games. 
+                The creation of the questionnaire has also improved my data collection skills, especially surrounding Player's suggested improvements, something I had stuggled to gather in previous projects.
+                The development of the prototype to its current state has improved my abilities in VR interactions, with a variety of improvements over previous VR games and tutorials I have been apart of. During this development, I was able to implement VR interactions quicker,
+                with less bug-ridden behaviour, thanks to the consistent improvements I have seen in my programming skills since other projects such as my <a href="/projects/bmw-project">BMW + QUT Design Academy</a> Capstone project.
+            </p>
+            <p>
+                For future work on this project I would focus on quicker iteration over the the production and sharing of the questionnaire. Delays in modifying and reviewing questions within the questionnaire caused it to be sent out later into the VRES period, limiting the number of responses that could be obtained.
+                While the results from these responses generally indicated support for the proposed systems as mentioned prior, the responses can only be considered qualitative due to the low total number of completed responses.
+            </p>
+        </div>
+
+        <!-- Gallery -->
+        <div class="information-section" id="gallery">
+            <h2>Gallery</h2>
+            <h3>Presentation Poster</h3>
+            <object class="gallery-pdf" data="/files/VRES_presentation.pdf"></object>
+            <h3>Prototype Progress</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/projects/vres-2025/intro_msg_llm_agent.png">
+                </div>
+                <div class="gallery-item">
+                    <img src="/projects/vres-2025/interfaces_tutorial.png">
+                </div>
+                <div class="gallery-item">
+                    <img src="/projects/vres-2025/teleport_tutorial.png">
+                </div>
+                <div class="gallery-item">
+                    <img src="/projects/vres-2025/grab_example.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
