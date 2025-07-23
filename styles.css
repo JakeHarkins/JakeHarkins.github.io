@@ -163,6 +163,8 @@ body{
     max-width: 140px;
     max-height: 140px;
 
+    aspect-ratio: 1;
+
     padding-right: 2.5%;
 }
 
