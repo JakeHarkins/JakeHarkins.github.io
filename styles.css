@@ -6,6 +6,7 @@
     --background-colour: #22333B;
     --nav-colour: #1A252B;
     --text-colour: #EAE0D5;
+    --footer-text: #948F8A;
     --header-img: url("/projects/constructing-change/CC_main-menu.jpg");
 
     --text-hover: #C6AC8F;
@@ -270,11 +271,15 @@ body{
 }
 
 .footer{
-    background-color: var(--nav-colour);
-
     width: 100vw;
 
     text-align: center;
+
+    padding-bottom: 2%;
+}
+
+.footer p{
+    color: var(--footer-text);
 }
 
 .skills-logo-holder img{
@@ -359,6 +364,8 @@ body{
 
     max-width: 360px;
     max-height: 360px;
+
+    aspect-ratio: 1;
 }
 
 .intro-section div{
@@ -484,8 +491,6 @@ body{
 
 /* Footer */
 .footer{
-    background-color: var(--nav-colour);
-
     width: 100%;
     height: 45px;
 
