@@ -20,6 +20,8 @@ h1{
     font-style: normal;
     font-size: 36pt;
     color: var(--text-colour);
+
+    margin: 0.75% 0% 0.75% 0%;
 }
 
 h2{
@@ -29,13 +31,16 @@ h2{
     font-style: normal;
     font-size: 24pt;
     color: var(--text-colour);
+
+    margin: 1.5% 0% 1.5% 0%;
 }
 
 h3{
     color: var(--text-colour);
+    font-size: 18pt;
 }
 
-p, a, li{
+p, a, li, ul{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -46,9 +51,17 @@ p, a, li{
     text-decoration: none;
 }
 
-a {
-    font-weight: bold;
+a{
+    font-weight: 700;
+}
+
+.navigation a{
     text-decoration: none;
+    font-weight: 400;
+}
+
+.active{
+    color: var(--text-hover);
 }
 /* #endregion */
 
