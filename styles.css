@@ -32,12 +32,14 @@ h2{
     font-size: 24pt;
     color: var(--text-colour);
 
-    margin: 1.5% 0% 1.5% 0%;
+    margin: 1% 0% 1% 0%;
 }
 
 h3{
     color: var(--text-colour);
     font-size: 18pt;
+
+    margin: 1% 0 1% 0;
 }
 
 p, a, li, ul{
@@ -204,8 +206,8 @@ body{
     padding-left: 5%;
     padding-right: 5%;
 
-    padding-top: 0;
-    margin-top: 0;
+    padding-top: 1%;
+    margin-top: 1%;
 }
 
 .project-entry img{
@@ -312,8 +314,8 @@ body{
 
     text-align: center;
 
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 /* #region Desktop Styling */
@@ -367,9 +369,8 @@ body{
     flex-direction: column;
 
     width: 70%;
-    padding: 0 15% 0% 15%;
+    padding: 2.5% 15% 2.5% 15%;
 }
-
 /* Header Setup */
 .header{
     width: 100%;
