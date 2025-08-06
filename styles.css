@@ -200,6 +200,23 @@ body{
     flex-direction: column;
 }
 
+.project-intro{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.project-intro div:nth-child(1){
+    width: 50%;
+    margin-right: 2.5%;
+}
+
+.project-intro div:nth-child(2){
+    width: 50%;
+    margin-left: 2.5%;
+}
+
 .project-entry p{
     width: 90%;
 
@@ -211,12 +228,15 @@ body{
 }
 
 .project-entry img{
-    width: 80%;
+    max-width: 80%;
+    height: auto;
 
     padding-left: 10%;
     padding-right: 10%;
 
     padding-top: 5%;
+
+    object-fit: contain;
 }
 
 .project-entry h2{
@@ -456,10 +476,8 @@ body{
     align-self: center;
 
     width: 30%;
-    min-width: 430px;
-
     max-height: 80%;
-    max-width: 420px;
+    max-width: 450px;
 
     padding: 2% 2.5% 2% 5%;
 }
