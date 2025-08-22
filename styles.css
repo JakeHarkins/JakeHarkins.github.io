@@ -537,6 +537,15 @@ body{
     width: 70%;
 }
 
+embed{
+    width: 90%;
+    height: auto;
+
+    padding: 0 5% 0 5%;
+
+    aspect-ratio: 16 / 9;
+}
+
 /* Projects Gallery */
 .gallery{
     display: grid;
