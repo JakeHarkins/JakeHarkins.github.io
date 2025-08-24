@@ -228,6 +228,13 @@ body{
     margin-left: 2.5%;
 }
 
+.project-intro img{
+    width: 90%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .project-entry p{
     width: 90%;
 
