@@ -91,6 +91,10 @@ body{
     flex-direction: column;
 }
 
+.declaration{
+    color: var(--text-hover);
+}
+
 .header-holder{
     display: flex;
     flex-direction: column;
